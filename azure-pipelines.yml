@@ -13,7 +13,8 @@ steps:
 - task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
-    mavenOptions: 'Default'
+    mavenVersionOption: 'Default'
+    mavenOptions: '-Xmx1024m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: 'default'
     jdkArchitectureOption: 'x64'
